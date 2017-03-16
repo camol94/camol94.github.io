@@ -21,20 +21,26 @@
     <script>
         $(function() {
             $(".header-welcome").typed({
-                strings: ["Miło mi, że odwiedziłęś moją stronę.",],
-                typeSpeed: 10
+                strings: ["Miło mi, że odwiedziłęś moją stronę.", ],
+                typeSpeed: 10,
+                // show cursor
+                showCursor: false
             });
         });
+
     </script>
     <script>
         $(function() {
             $(".header-info").typed({
-                strings: ["Jeśli już tu jesteś to znaczy, że potrzebujesz <i>Front-End Developera</i>!<br>Użyj strzałki i dowiedz się więcej.",],
+                strings: ["Jeśli już tu jesteś to znaczy, że potrzebujesz <i>Front-End Developera</i>!<br>Użyj strzałki i dowiedz się więcej.", ],
                 typeSpeed: 10,
                 startDelay: 2000,
-                contentType: 'html'
+                contentType: 'html',
+                // show cursor
+                showCursor: false
             });
         });
+
     </script>
 </head>
 
@@ -63,10 +69,11 @@
                     <p>Użyj strzałki i dowiedz się więcej.</p>
                 </h2>
             </div>
-
             <span>
                 <a href="#about"><i class="fa fa-angle-double-down animated fadeInDown infinite"></i></a>
             </span>
+
+
         </div>
     </header>
     <section class="about" id="about">
@@ -224,6 +231,7 @@
 
         $('.nav-button').on('click', toggleNav);
         $('.nav-menu a').on('click', toggleNav);
+
     </script>
 </body>
 
