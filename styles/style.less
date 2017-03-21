@@ -5,6 +5,7 @@ body {
     background: #050D34;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 19px;
+    color: #fff;
 }
 
 
@@ -29,6 +30,10 @@ nav {
         font-size: 35px;
         line-height: 55px;
         display: inline;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
 
         span {
             color: red;
@@ -476,13 +481,19 @@ section {
 }
 
 .project1 {
-    background: url("../images/codingbg.png");
+    background: url("../images/paral2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .project2 {
-  background: url("../images/codingbg.png");
+  background: url("../images/projectpage.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .project3 {
-  background: url("../images/codingbg.png");
+  background: url("../images/port2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .project4 {
   background: url("../images/codingbg.png");
@@ -498,10 +509,14 @@ section {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    background: rgba(241, 14, 14, 0.73);
+    background: rgba(241, 14, 14, 0.63);
     opacity: 0;
     border-radius: 10px;
+    cursor: pointer;
     transition: all 0.5s;
+    @media (max-width: 850px) {
+      opacity: 1;
+    }
     &:hover {
         opacity: 1;
     }
@@ -561,11 +576,15 @@ section {
     }
 
 }
-
-h3 {
-    font-size: 25px;
+.contact {
+  text-align: center;
+  h2 {
+      font-size: 33px;
+      color: red;
+  }
 }
 
 footer {
     background: #3362e2;
+    text-align: center;
 }
